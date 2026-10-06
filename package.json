@@ -1,0 +1,15 @@
+{
+  "name": "opencode",
+  "version": "1.0.0",
+  "description": "Una landing page para una clínica dental con calendario de disponibilidad en tiempo real (Express + SQLite) y asistente virtual.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

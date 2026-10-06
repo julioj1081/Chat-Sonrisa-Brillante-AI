@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    container_name: sonrisa-brillante
+    ports:
+      - "8080:3000"
+    restart: unless-stopped
+    volumes:
+      - citas-data:/app/data
+
+volumes:
+  citas-data:

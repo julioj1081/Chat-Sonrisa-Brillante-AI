@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Citas - Sonrisa Brillante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a href="/" class="logo">🦷 Sonrisa Brillante</a>
+                <nav>
+                    <a href="/#servicios">Servicios</a>
+                    <a href="/#cita">Agendar Cita</a>
+                    <a href="/calendario.html" class="active">Calendario</a>
+                    <a href="/#contacto">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="calendar-main">
+        <div class="container">
+            <div class="calendar-head">
+                <h1 class="calendar-title">Calendario de Citas</h1>
+                <p class="calendar-subtitle">Estas son las citas ya agendadas en la clínica.</p>
+            </div>
+
+            <div class="calendar-toolbar">
+                <button id="prevMonth" class="nav-btn" aria-label="Mes anterior"><i class="fas fa-chevron-left"></i></button>
+                <h2 id="monthYear" class="month-year"></h2>
+                <button id="nextMonth" class="nav-btn" aria-label="Mes siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button id="todayBtn" class="today-btn">Hoy</button>
+            </div>
+
+            <div class="calendar-layout">
+                <div class="calendar-card">
+                    <div class="weekdays" id="weekdays"></div>
+                    <div class="days-grid" id="daysGrid"></div>
+                </div>
+
+                <aside class="day-panel">
+                    <h3 id="panelDate" class="panel-date"></h3>
+                    <div id="dayList" class="day-list"></div>
+                </aside>
+            </div>
+
+            <div class="calendar-legend">
+                <span><i class="dot dot-real"></i> Cita confirmada</span>
+                <span><i class="dot dot-demo"></i> Cita de demostración</span>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+52 55 1234 5678</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contacto@sonrisabrillante.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Ciudad de México</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sonrisa Brillante Clínica Dental. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/calendar.js"></script>
+</body>
+</html>
